@@ -1,0 +1,36 @@
+.finderContainer {
+  display: flex;
+  padding: 10px 0px;
+  width: 85vw;
+
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 30px;
+}
+
+.finderBlock {
+  padding: 5px 20px;
+  width: 100%;
+  color: gray;
+  font-size: small;
+}
+
+.finderBlock:not(last-child) {
+  border-right: 5px solid rgb(173, 172, 172);
+}
+
+.finrerTitle {
+  color: #1e90ff;
+}
+
+.finderBtn {
+  width: 15vw;
+  margin: 10px;
+  background-color: #1e90ff;
+  border: none;
+  border-radius: 50%;
+}
+
+.finderBtnImg {
+  margin: 2px;
+  object-fit: cover;
+}

@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "country": "Ukraine",        
+        "img": "https://cdn.pixabay.com/photo/2015/11/28/17/26/unesco-1067619_960_720.jpg",
+        "price": 9999,
+        "descr": "Ukraine is a country, situated in the centre of Europe. It has a long history, beautiful landscapes, interesting traditions and rich culture. It has approximately 45 millions inhabitants and the area is 603 628 square kilometers.",
+        "duration": 11,
+        "appraisal": 5,
+        "reviews": 345
+    },
+    {
+        "id": 2,
+        "country": "France",
+        "img": "https://cdn.pixabay.com/photo/2013/04/13/18/42/tower-103417_960_720.jpg",
+        "price": 4759,
+        "descr": "If you want to see the Eiffel Tower and the Champs-Elysees, you should go to France. There are many countries in the world, but non like this one. It is not only the largest country in Europe, but also one of the most interesting places in the world.",
+        "duration": 4,
+        "appraisal": 4,
+        "reviews": 279
+    },
+    {
+        "id": 3,
+        "country": "Italy",
+        "img": "https://cdn.pixabay.com/photo/2016/02/19/11/36/canal-1209808_960_720.jpg",
+        "price": 3957,
+        "descr": "Italy is one of the most beautiful countries in Europe. Every year millions of tourists visit this country to see its attractions.",
+        "duration": 8,
+        "appraisal": 5,
+        "reviews": 187
+    },
+    {
+        "id": 4,
+        "country": "Great Britain",
+        "img": "https://cdn.pixabay.com/photo/2019/12/29/21/21/big-ben-4728199_960_720.jpg",
+        "price": 7254,
+        "descr": "The United Kingdom of Great Britain and Northern Ireland is situated on the British Isles. The British Isles consist of two large islands, Great Britain and Ireland, and above five thousand small islands. Their total area is over 315 000 square kilometers. ",
+        "duration": 7,
+        "appraisal": 4.5,
+        "reviews": 58
+    }
+]
