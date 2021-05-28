@@ -8,6 +8,7 @@
 }
 
 .finderBlock {
+  position: relative;
   padding: 5px 20px;
   width: 100%;
   color: gray;
@@ -33,4 +34,20 @@
 .finderBtnImg {
   margin: 2px;
   object-fit: cover;
+}
+
+.finderModal {
+  position: absolute;
+  top: 115%;
+  background-color: rgba(255, 255, 255, 0.9);
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: 0 0;
+  transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.finderBlock:hover .finderModal,
+.finderBlock:focus .finderModal {
+  transform: scaleY(1.1);
+  opacity: 1;
 }

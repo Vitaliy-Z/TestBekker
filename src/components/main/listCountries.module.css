@@ -5,31 +5,37 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
 .itemCountry {
   display: flex;
   justify-content: space-between;
   margin: 1vw 0;
   padding: 0;
-  list-style: none;
 
-  width: calc((100% - 2vw) / 2);
-
+  width: 100%;
   box-shadow: 1px 2px 15px grey;
 }
-
 .itemCountry:hover,
 .itemCountry:focus {
-  transform: scale(1.02);
+  transform: scale(1.03);
 }
-
 .imgCountry {
-  width: 15vw;
+  width: 30vw;
   height: 100%;
   object-fit: cover;
 }
-
 .characteristics {
+  width: 100%;
   padding: 1vw;
   border: 2px solid grey;
+}
+
+@media screen and (min-width: 900px) {
+  .itemCountry {
+    max-width: calc((100% - 5vw) / 2);
+  }
+  .imgCountry {
+    width: 20vw;
+    /* height: 100%; */
+    /* object-fit: cover; */
+  }
 }

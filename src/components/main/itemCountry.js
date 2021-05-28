@@ -1,17 +1,25 @@
 import React from "react";
+import { Link } from "gatsby";
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+
 import { imgCountry, characteristics } from "./listCountries.module.css";
 
 export default function ItemCountry({ item }) {
+  const { url, title, reviews, price, duration, country, appraisal, image } =
+    item.frontmatter;
+  const img = getImage(image);
+
   return (
     <>
-      <img src={item.img} alt={item.country} className={imgCountry} />
+      <Link to={`/${url}`} key={item.id}>
+        <GatsbyImage image={img} alt={country} className={imgCountry} />
+      </Link>
       <div className={characteristics}>
-        <h2>{item.country}</h2>
-        <h4>Price: {item.price} $</h4>
-        <p>{item.descr}</p>
-        <h4>Duration: {item.duration} days</h4>
-        <h4>Reviews: {item.reviews}</h4>
-        <h4>Appraisal: {item.appraisal} / 5</h4>
+        <h2>{title}</h2>
+        <h4>Price: {price} $</h4>
+        <h4>Duration: {duration} days</h4>
+        <h4>Reviews: {reviews}</h4>
+        <h4>Appraisal: {appraisal} / 5</h4>
       </div>
     </>
   );

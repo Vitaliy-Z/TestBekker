@@ -7,30 +7,42 @@ import Finder from "../components/finder/finder";
 import ListCountries from "../components/main/listCountries";
 
 export default function Home({ data }) {
+  const { nodes } = data.allMarkdownRemark;
+
   return (
     <Container>
       <Header>
-        <Finder />
+        <Finder data={nodes} />
       </Header>
-      <ListCountries data={data.allDbJson.edges} />
+      <ListCountries data={nodes} />
     </Container>
   );
 }
 
 export const query = graphql`
-  query MyQuery {
-    allDbJson {
-      edges {
-        node {
-          id
+  query MainPage {
+    allMarkdownRemark {
+      nodes {
+        frontmatter {
+          image {
+            childImageSharp {
+              gatsbyImageData(
+                width: 250
+                height: 250
+                formats: [AUTO, JPG, WEBP]
+                placeholder: BLURRED
+              )
+            }
+          }
           appraisal
           country
-          descr
           duration
-          img
           price
           reviews
+          title
+          url
         }
+        id
       }
     }
   }
