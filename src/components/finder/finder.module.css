@@ -23,27 +23,29 @@
   color: #1e90ff;
 }
 
-.finderBtn {
-  width: 15vw;
-  margin: 10px;
-  background-color: #1e90ff;
-  border: none;
-  border-radius: 50%;
-}
-
-.finderBtnImg {
-  margin: 2px;
-  object-fit: cover;
-}
-
 .finderModal {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: nowrap;
+
   position: absolute;
+  z-index: 999;
   top: 115%;
-  background-color: rgba(255, 255, 255, 0.9);
   opacity: 0;
+
+  padding: 2vh 0.5vw;
+
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 5%;
   transform: scaleY(0);
   transform-origin: 0 0;
   transition: transform 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.finderModalItem {
+  /* display: block; */
+  padding: 5px;
 }
 
 .finderBlock:hover .finderModal,

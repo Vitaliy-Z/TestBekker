@@ -1,10 +1,10 @@
 ---
 title: Travel in Italy
 country: Italy
-price: 3957
-duration: 8
-appraisal: 5
-reviews: 187
+price: "281"
+duration: "8"
+appraisal: "4"
+reviews: "187"
 url: italy
 image: ../../images/italy.jpg
 ---

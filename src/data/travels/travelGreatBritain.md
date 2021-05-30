@@ -1,10 +1,10 @@
 ---
 title: Travel in Great Britain
 country: Great Britain
-price: 7254
-duration: 7
-appraisal: 4.5
-reviews: 58
+price: "159"
+duration: "7"
+appraisal: "3"
+reviews: "58"
 url: great-britain
 image: ../../images/great-britain.jpg
 ---

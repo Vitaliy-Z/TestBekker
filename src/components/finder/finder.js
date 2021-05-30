@@ -1,34 +1,27 @@
 import React from "react";
-import { StaticImage } from "gatsby-plugin-image";
-import FinderBlock from "./finderBlock";
-import { finderContainer, finderBtn, finderBtnImg } from "./finder.module.css";
+import {
+  FinderBlockCountry,
+  FinderBlockPrice,
+  FinderBlockAppraisal,
+} from "./finderBlocks";
+import { finderContainer } from "./finder.module.css";
 
-export default function Finder({ data }) {
+export default function Finder({
+  data,
+  filterCountry,
+  setFilterCountry,
+  setFilterAppraisal,
+  setFilterPrice,
+}) {
   return (
     <div className={finderContainer}>
-      <FinderBlock
-        title="Country"
-        descr="Where do you want to go?"
+      <FinderBlockCountry
         data={data}
+        filterCountry={filterCountry}
+        setFilterCountry={setFilterCountry}
       />
-      <FinderBlock
-        title="Duration"
-        descr="How much time to rest?"
-        data={data}
-      />
-      <FinderBlock
-        title="Appraisal"
-        descr="What is the minimum score?"
-        data={data}
-      />
-
-      <button className={finderBtn}>
-        <StaticImage
-          className={finderBtnImg}
-          src="../../images/magnifier.svg"
-          alt="search"
-        />
-      </button>
+      <FinderBlockPrice setFilterPrice={setFilterPrice} />
+      <FinderBlockAppraisal setFilterAppraisal={setFilterAppraisal} />
     </div>
   );
 }

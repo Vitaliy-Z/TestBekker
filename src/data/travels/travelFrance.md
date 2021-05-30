@@ -1,10 +1,10 @@
 ---
 title: Travel in France
 country: France
-price: 4759
-duration: 4
-appraisal: 4
-reviews: 279
+price: "75"
+duration: "4"
+appraisal: "2"
+reviews: "279"
 url: france
 image: ../../images/france.jpg
 ---
